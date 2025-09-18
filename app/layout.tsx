@@ -23,8 +23,15 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
-          <Navbar/>
-        {children}
+      <div className="flex h-screen overflow-hidden">
+        <Navbar/>
+         <div className="flex flex-col flex-1 overflow-auto">
+        <div className="max-w-7xl mx-auto w-full">
+             
+             {children}
+        </div>
+       </div>
+      </div>
       </body>
     </html>
   );

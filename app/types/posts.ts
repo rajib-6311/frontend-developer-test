@@ -1,7 +1,7 @@
 
 
 export interface postsItems {
-    id: string,
+    id: number,
     title: string,
     body: string
 }

@@ -43,7 +43,7 @@ export default function DashboardHome() {
           className="p-6 bg-white shadow rounded-2xl cursor-pointer"
         >
           <h2 className="text-lg font-semibold text-gray-700">Users</h2>
-          <p className="text-2xl font-bold text-blue-600">1,245</p>
+          <p className="text-2xl font-bold text-red-500">1,245</p>
         </motion.div>
 
         <motion.div
@@ -77,7 +77,7 @@ export default function DashboardHome() {
             <Line
               type="monotone"
               dataKey="value"
-              stroke="#3b82f6"
+              stroke="#FF0000"
               strokeWidth={3}
               dot={{ r: 6 }}
               activeDot={{ r: 8 }}

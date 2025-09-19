@@ -24,14 +24,14 @@ const data = [
 export default function DashboardHome() {
   return (
     <div className="p-6 space-y-8">
-      {/* ✅ Static Summary Section */}
+      {/*  Static Summary Section */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-3xl font-bold text-gray-800">Welcome Back</h1>
-        <p className="text-gray-600">
+        <h1 data-aos="fade-up" className="text-3xl font-bold text-gray-800">Welcome Back</h1>
+        <p data-aos="fade-up" data-aos-delay="150" className="text-gray-600">
           Here’s a quick summary of your dashboard this week.
         </p>
       </motion.div>
@@ -40,7 +40,7 @@ export default function DashboardHome() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="p-6 bg-white shadow rounded-2xl"
+          className="p-6 bg-white shadow rounded-2xl cursor-pointer"
         >
           <h2 className="text-lg font-semibold text-gray-700">Users</h2>
           <p className="text-2xl font-bold text-blue-600">1,245</p>
@@ -48,7 +48,7 @@ export default function DashboardHome() {
 
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="p-6 bg-white shadow rounded-2xl"
+          className="p-6 bg-white shadow rounded-2xl cursor-pointer"
         >
           <h2 className="text-lg font-semibold text-gray-700">Revenue</h2>
           <p className="text-2xl font-bold text-green-600">$8,420</p>
@@ -56,14 +56,14 @@ export default function DashboardHome() {
 
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="p-6 bg-white shadow rounded-2xl"
+          className="p-6 bg-white shadow rounded-2xl cursor-pointer"
         >
           <h2 className="text-lg font-semibold text-gray-700">Orders</h2>
           <p className="text-2xl font-bold text-purple-600">320</p>
         </motion.div>
       </div>
 
-      {/* ✅ Small Animated Chart */}
+      {/*  Small Animated Chart */}
       <div className="p-6 bg-white shadow rounded-2xl h-80">
         <h2 className="text-lg font-semibold text-gray-700 mb-4">
           Weekly Activity

@@ -1,6 +1,4 @@
-// app/users/page.tsx
 "use client";
-
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -90,7 +88,7 @@ export default function UsersPage() {
 
               <button
                 onClick={() => setSelectedUser(null)}
-                className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-500 transition cursor-pointer"
               >
                 Close
               </button>

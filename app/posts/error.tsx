@@ -1,6 +1,6 @@
 "use client";
 
-export default function ErrorPage({ error, reset }: { error: Error; reset: () => void }) {
+export default function ErrorPage({ reset }: { error: Error; reset: () => void }) {
   return (
     <div className="p-8 text-center">
       <h1 className="text-4xl font-bold mb-4">Failed to load posts</h1> 

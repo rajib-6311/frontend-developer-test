@@ -18,13 +18,10 @@ export function useFetch<T>(url: string, cache: RequestCache = "force-cache") {
         if (isMounted) {
           setData(json);
         }
-      } catch (err: any) {
-        if (isMounted) {
-          console.log(err.message || "Something went wrong");
-        }
+      } catch (err) {
+        console.log('Data Fetch error',err)
       } 
     };
-
     fetchData();
 
     return () => {

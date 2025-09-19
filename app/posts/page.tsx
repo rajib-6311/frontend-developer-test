@@ -1,10 +1,9 @@
-// app/posts/page.tsx
 import PostsCard from "../shred/PostsCard";
 import { postsItems } from "../types/posts";
 
 const PostPage = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    cache: "no-store", // always fresh
+    cache: "no-store",
   });
   const posts: postsItems[] = await res.json();
 
